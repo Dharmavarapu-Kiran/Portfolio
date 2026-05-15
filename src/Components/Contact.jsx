@@ -42,12 +42,12 @@ function Contact() {
             <div className='Connect'>Connect with me</div>
 
             <div className='Socialmedia-icons'>
-              <a href="https://www.linkedin.com/in/kiran-dharmavarapu-9273a8232/"
+              <a href="https://www.linkedin.com/in/dharmavarapu-kiran-4241a6333/"
                  target="_blank" rel="noreferrer">
                 <i className="bi bi-linkedin"></i>
               </a>
 
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://github.com/Dharmavarapu-Kiran/Portfolio" target="_blank" rel="noreferrer">
                 <i className="bi bi-github"></i>
               </a>
 

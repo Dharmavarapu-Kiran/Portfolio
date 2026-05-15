@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Hero.css';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,6 @@ function Hero() {
             onClick={toggleMenu}
             aria-label="Toggle navigation"
           >
-            {/* Simple 3-line icon */}
             <span></span>
             <span></span>
             <span></span>
@@ -28,6 +28,7 @@ function Hero() {
           <ul className={`navLinks ${isMenuOpen ? 'nav-open' : ''}`}>
             <li><a href='#skills' onClick={closeMenu}>Skills</a></li>
             <li><a href='#projects' onClick={closeMenu}>Projects</a></li>
+              <li><Link to="/Resume">Resume</Link></li>
             <li><a href='#about' onClick={closeMenu}>About Me</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
             <li className='btn'>
