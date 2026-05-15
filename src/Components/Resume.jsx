@@ -1,6 +1,5 @@
 import React from "react";
 import "../Styles/Resume.css";
-import { Link } from "react-router-dom";
 
 function Resume() {
   return (
