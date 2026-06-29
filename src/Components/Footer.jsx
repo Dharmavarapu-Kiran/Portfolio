@@ -13,7 +13,7 @@ function Footer() {
           <i className="bi bi-linkedin"></i>
         </a>
 
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Dharmavarapu-Kiran" target="_blank" rel="noreferrer">
           <i className="bi bi-github"></i>
         </a>
 
