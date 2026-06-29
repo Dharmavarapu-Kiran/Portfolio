@@ -1,0 +1,258 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==== Container ==== */
+
+.contact-container {
+  width: 100%;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at top left, #020617, #020617 45%, #020617 100%);
+  color: #e5e7eb;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.Contact-Header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Contact-message {
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.Contact-Heading {
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.3rem);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.Contact-Underline {
+  width: 90px;
+  height: 4px;
+  border-radius: 999px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+}
+
+/* ==== Body layout (two columns) ==== */
+
+.Contact-Body {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Left side content */
+
+.Leftside-Contact {
+  flex: 1;
+}
+
+.Leftside-Contact h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.Leftside-Contact p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Email block */
+
+.Contact-Email {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  margin-bottom: 24px;
+}
+
+.Email-Icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top left, #1f2937, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Email-Icon i {
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+.Email-Address h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.Email-Address a {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.Email-Address a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Social media block */
+
+.Social-Media {
+  margin-top: 10px;
+}
+
+.Connect {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #9ca3af;
+}
+
+.Socialmedia-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.Socialmedia-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.Socialmedia-icons a i {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.Socialmedia-icons a:hover {
+  transform: translateY(-2px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.9);
+}
+
+/* ==== Right side form ==== */
+
+.Rightside-Contact {
+  flex: 1;
+}
+
+.Rightside-Contact form {
+  background: radial-gradient(circle at top left, #020617, #020617);
+  border-radius: 18px;
+  padding: 24px 22px;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Rightside-Contact input,
+.Rightside-Contact textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.Rightside-Contact input::placeholder,
+.Rightside-Contact textarea::placeholder {
+  color: #6b7280;
+}
+
+.Rightside-Contact input:focus,
+.Rightside-Contact textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+  background: rgba(15, 23, 42, 0.95);
+}
+
+/* Button styling */
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary {
+  margin-top: 6px;
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #f9fafb;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.65);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary i {
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.8);
+}
+
+/* ==== Responsive ==== */
+
+@media (max-width: 900px) {
+  .Contact-Body {
+    flex-direction: column;
+  }
+
+  .Rightside-Contact form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 60px 16px;
+  }
+
+  .Contact-Body {
+    gap: 28px;
+  }
+
+  .Contact-Header {
+    margin-bottom: 28px;
+  }
+}
