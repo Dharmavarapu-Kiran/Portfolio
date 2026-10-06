@@ -27,7 +27,7 @@ function Hero() {
 
           <ul className={`navLinks ${isMenuOpen ? 'nav-open' : ''}`}>
             <li><a href='#skills' onClick={closeMenu}>Skills</a></li>
-            <li><a href='#projects' onClick={closeMenu}>Projects</a></li>
+            <li><a href='https://github.com/Dharmavarapu-Kiran' onClick={closeMenu}>Projects</a></li>
               <li><Link to="/Resume">Resume</Link></li>
             <li><a href='#about' onClick={closeMenu}>About Me</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
@@ -45,7 +45,7 @@ function Hero() {
             technology with pixel-perfect design
           </p>
           <div className='Header-Buttons'>
-            <button className='Header-Button-1'>View My Work ↓</button>
+            <a href="https://github.com/Dharmavarapu-Kiran" className="Header-Button-2">View My Work</a>
             <a href="#contact" className="Header-Button-2">
               Get in Touch
             </a>

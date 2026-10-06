@@ -4,28 +4,24 @@ import "../Styles/Resume.css";
 function Resume() {
   return (
     <div className="resume-page">
+      <h1>My Resume</h1>
 
-      {/* Resume Container */}
-      <div className="resume-wrapper">
-        <h1 className="resume-title">My Resume</h1>
-
-        {/* Resume Preview (iframe or image or PDF embed) */}
+      <div className="resume-container">
         <iframe
-          src="/Kiran-Resume.pdf"
-          className="resume-display"
-          title="Resume Preview"
-        ></iframe>
-
-        {/* Download Button */}
-        <a 
-          href="/Kiran-Resume.pdf"
-          download
-          className="resume-download-btn"
-        >
-          Download Resume
-        </a>
+          src="/Kiran-Resume.pdf#view=FitH"
+          title="Kiran Resume"
+          className="resume-pdf"
+        />
       </div>
 
+      <a
+        href="/Kiran-Resume.pdf"
+        download="Kiran-Resume.pdf"
+        className="download-btn"
+      >
+        Download Resume
+      </a>
+        
     </div>
   );
 }

@@ -43,7 +43,7 @@ function App() {
           path="/Resume"
           element={
             <>
-              <Hero /> 
+              
               <Resume />
               <Footer />
             </>
