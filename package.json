@@ -10,7 +10,10 @@
     "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.10.0",
+=======
+>>>>>>> 95da6e2a6670d316efff28c51256fe2ea2a414ba
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../Styles/Hero.css';
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
+=======
+>>>>>>> 95da6e2a6670d316efff28c51256fe2ea2a414ba
 
 function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +23,10 @@ function Hero() {
             onClick={toggleMenu}
             aria-label="Toggle navigation"
           >
+<<<<<<< HEAD
+=======
+            {/* Simple 3-line icon */}
+>>>>>>> 95da6e2a6670d316efff28c51256fe2ea2a414ba
             <span></span>
             <span></span>
             <span></span>
@@ -27,8 +34,12 @@ function Hero() {
 
           <ul className={`navLinks ${isMenuOpen ? 'nav-open' : ''}`}>
             <li><a href='#skills' onClick={closeMenu}>Skills</a></li>
+<<<<<<< HEAD
             <li><a href='https://github.com/Dharmavarapu-Kiran' onClick={closeMenu}>Projects</a></li>
               <li><Link to="/Resume">Resume</Link></li>
+=======
+            <li><a href='#projects' onClick={closeMenu}>Projects</a></li>
+>>>>>>> 95da6e2a6670d316efff28c51256fe2ea2a414ba
             <li><a href='#about' onClick={closeMenu}>About Me</a></li>
             <li><a href='#contact' onClick={closeMenu}>Contact</a></li>
             <li className='btn'>
@@ -45,7 +56,11 @@ function Hero() {
             technology with pixel-perfect design
           </p>
           <div className='Header-Buttons'>
+<<<<<<< HEAD
             <a href="https://github.com/Dharmavarapu-Kiran" className="Header-Button-2">View My Work</a>
+=======
+            <button className='Header-Button-1'>View My Work ↓</button>
+>>>>>>> 95da6e2a6670d316efff28c51256fe2ea2a414ba
             <a href="#contact" className="Header-Button-2">
               Get in Touch
             </a>
